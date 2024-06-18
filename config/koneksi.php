@@ -5,8 +5,8 @@ $user_name = 'muriacell';
 $user_password = 'muriacell';
 
 try {
-    $conn = new PDO($db_name, $user_name, $user_password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $koneksi = new PDO($db_name, $user_name, $user_password);
+    $koneksi->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
