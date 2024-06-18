@@ -1,8 +1,8 @@
 <?php
 
-$db_name = 'mysql:host=db;dbname=merantijaya'; // Ganti dengan alamat IP container MySQL
-$user_name = 'merantijaya';
-$user_password = 'merantijaya';
+$db_name = 'mysql:host=db;dbname=muriacell'; // Ganti dengan alamat IP container MySQL
+$user_name = 'muriacell';
+$user_password = 'muriacell';
 
 try {
     $conn = new PDO($db_name, $user_name, $user_password);
